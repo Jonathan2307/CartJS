@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Oswald:wght@400;500;700&display=swap');
+
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#navbar {
+    background-image: linear-gradient(90deg,hsla(0, 0%, 100%, 0) ,rgba(255, 255, 255, 0.63), hsla(0, 0%, 100%, 0) );
+
+}
+
+@media screen and (max-width: 993px) {
+    #navbar {
+        background-image: linear-gradient(90deg,rgb(255, 255, 255), hsla(0, 0%, 100%, 0) );
+    }
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+
+header {
+    height: 650px;
+    background-image: url(../images/jonny-kennaugh-nPOtzvGLYW0-unsplash.jpg);
+    background-size: cover;
+    background-position: center 45%;
+    position: relative;
+}
+
+.stick {
+    position: absolute;
+    bottom: 0;
+    height: 56px;
+    background-color: #ffd200;
+}
+
+
+
+.container {
+    max-width: 1000px;
+}
+
+.shape {
+    width: 100%;
+    padding: 3em 4em;
+    border-radius: 5em 5em 5em 12em;
+    position: absolute;
+    bottom: 4em;
+}
+
+.shape::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffd200;
+    padding: 3em 4em;
+    border-radius: 5em 5em 5em 12em;
+    position: absolute;
+    bottom: 4em;
+    mix-blend-mode: multiply;
+    right: 0;
+    top: 0;
+
+}
+
+.headerModel {
+    color: white;
+    text-align: end;
+    width: 15em;
+    position: relative;
+    z-index: 10;
+}
+
+.headerModel h1 {
+    font-size: 4em;
+}
+
+.headerModel a, .desc button {
+    background-color: #ff8d00;
+    color: white;
+    border-radius: 100px;
+    padding: 0.3em 2.2em;
+    letter-spacing: 0.1em;
+}
+
+.panier {
+    background-color: #ff8d00;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.2em 1em;
+    border-radius: 100px;
+    position: relative;
+}
+
+.newitem::after {
+    content: '';
+    position: absolute;
+    background-color: #ffd200;
+    transform: translate(20%, -20%);
+    height: 15px;
+    width: 15px;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+}
+
+.services .icon {
+    background-color: #ffd200;
+    padding: 0 0.15em;
+    border-radius: 0.8em;
+    width: 70px;
+    margin: 0 auto;
+}
+
+.services i{
+    font-size: 3em;
+}
+
+.services .desc {
+    font-size: 0.8em;
+}
+
+.bike {
+    max-width: 500px;
+    position: relative;
+}
+
+.bike img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+main .desc p{
+    font-family: 'Mulish', sans-serif;
+    color: rgb(82, 82, 82);
+    line-height: 1.6em;
+}
+
+main .desc h3 {
+    font-size: 2em;
+}
+
+.myCard {
+    margin-bottom: 100px;
+}
+
+.myCard:nth-of-type(2n+1) {
+    flex-direction: row-reverse;
+}
+.myCard:nth-of-type(2n+1) .bike {
+    transform: scaleX(-1);
+}
+
+
+.myCard button {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.myCard button:last-of-type {
+    background-color: unset;
+    color: black;
+    border: #ff8d00 2px solid;
+}
+
+.myCard i {
+    font-size: 1.2em;
+}
+
+.vosPhoto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.vosPhoto p {
+    font-family: 'Mulish', sans-serif;
+    color: rgb(82, 82, 82);
+    line-height: 1.6em;
+}
+
+footer {
+    color: white;
+    padding: 2em;
+}
+
+.social {
+    font-size: 2em;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer label {
+    font-family: 'Mulish', sans-serif;
+}
+
+footer .myInput {
+    max-width: 300px;
+}
+
+.modalDesc {
+    font-family: 'Mulish', sans-serif;
+}
+
+#addItem {
+    font-weight: normal;
+}
+
+#addItem button {
+    height: 30px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+#addItem button:last-of-type {
+    background-color: #ff8d00;
+    margin-left: 5px;
+    color: white;
+}
+
+.panierButton {
+    background-color: #ff8d00;
+    color: white;
+}
+
+.buttonPanier button{
+    letter-spacing: 0.1em;
+}
+
+.myOrange {
+    background-color: #ffd200;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%)}
+.btn-grad {
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+.scrollTop {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+    color: #ffd200;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.scrollTop:hover {
+    animation: anim 1s alternate ease-in-out infinite;
+}
+
+@keyframes anim {
+    from {
+        bottom: 1rem;
+    }
+    to {
+        bottom: 1.5rem;
+    }
+}
